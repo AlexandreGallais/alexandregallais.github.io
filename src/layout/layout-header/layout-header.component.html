@@ -1,0 +1,17 @@
+<nav>
+    <ul>
+        @for (route of routeService.getFeatureRoutes(); track $index) {
+            <li>
+                <a
+                    [routerLink]="route.path"
+                    [routerLinkActive]="'active'"
+                    [routerLinkActiveOptions]="{
+                        exact: route.path ? false : true
+                    }"
+                >
+                    {{ route.data?.["title"] }}
+                </a>
+            </li>
+        }
+    </ul>
+</nav>

@@ -1,0 +1,19 @@
+:host {
+    display: flex;
+    padding: 32px 64px;
+    user-select: none;
+
+    a {
+        font-size: 32px;
+    }
+
+    ul {
+        display: flex;
+        gap: 128px;
+        list-style: none;
+    }
+
+    .active {
+        color: var(--color-primary);
+    }
+}
